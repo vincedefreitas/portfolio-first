@@ -45,6 +45,8 @@ section {
   display: flex;
   align-items: center;
   height: 100vh;
+  animation-name: fadeIn, slideIn;
+  animation-duration: 5s, 3s;
 }
 
 .container {
@@ -140,10 +142,29 @@ footer {
 
 .icons svg {
   width: 36px;
-  fill: var(--accent);
+  fill: #474747;
   transition: 0.2s;
 }
 
 .icons svg:hover {
-  fill: #d8d8d6;
+  fill: #b5b5b3;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    translate: -50vw 0;
+  }
+
+  to {
+    translate: 0 0;
+  }
 }

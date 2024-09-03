@@ -1,0 +1,63 @@
+:root {
+  --primary: #ebebeb;
+  --secondary: #f7eed3;
+  --text: #222;
+  --accent: #aab396;
+  --ff: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--ff);
+  background-color: var(--primary);
+  color: var(--text);
+  font-weight: 300;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+  transition: 0.2s;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+.nav-links a {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+}
+
+section {
+  height: 100vh;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1028px;
+  width: 70%;
+  margin: auto;
+}
+
+.hero h1,
+.hero p {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 200;
+  line-height: 1.3;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 10px;
+}
